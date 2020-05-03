@@ -1,0 +1,52 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>AuditAttribute</Name>
+    <Description>VB.NET ASP.NET Core 3.1 Minimal dynamicallyFormed onePageSite with static content, defaultPage, ActionFilters and audit/logging all requestHeaders by custom attribute (with headers for nginx reverseProxy)</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>AuditAttribute</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
+	<LanguageTag>VB</LanguageTag>
+	<PlatformTag>Windows</PlatformTag>
+	<PlatformTag>Linux</PlatformTag>
+	<ProjectTypeTag>Web</ProjectTypeTag>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="CoreLinux.vbproj" File="CoreLinux.vbproj" ReplaceParameters="true">
+      <Folder Name="My Project" TargetFolderName="My Project">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <ProjectItem ReplaceParameters="false" TargetFileName="asp_net_core_3_1_vb_GDH_icon.ico">asp_net_core_3_1_vb_GDH_icon.ico</ProjectItem>
+      </Folder>
+      <Folder Name=".git" TargetFolderName=".git" />
+      <Folder Name=".vs" TargetFolderName=".vs" />
+      <Folder Name="Code" TargetFolderName="Code">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AuditAttribute.vb">AuditAttribute.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ObjectDumper.vb">ObjectDumper.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="RouteChecker.vb">RouteChecker.vb</ProjectItem>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TestController.vb">TestController.vb</ProjectItem>
+      </Folder>
+      <Folder Name="view" TargetFolderName="view">
+        <Folder Name="test" TargetFolderName="test">
+          <ProjectItem ReplaceParameters="false" TargetFileName="asp_net_core_3_1_vb_GDH_icon.ico">asp_net_core_3_1_vb_GDH_icon.ico</ProjectItem>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="asp_net_core_3_1_vb_GDH_icon.ico">asp_net_core_3_1_vb_GDH_icon.ico</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.vb">Program.vb</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.vb">Startup.vb</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
